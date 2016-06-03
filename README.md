@@ -1,1 +1,0 @@
-# heron-user-manual
