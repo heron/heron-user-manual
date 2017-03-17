@@ -14,6 +14,7 @@
 \usepackage{dcolumn}
 \usepackage{colortbl}
 \usepackage{array}
+\usepackage{needspace}
 
 
 
@@ -72,7 +73,7 @@ This section provides an overview of the key specifications of the Heron platfor
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.75\linewidth]{h-architecture.PNG}
+  \includegraphics[width=0.85\linewidth]{h-architecture.PNG}
   \caption{Heron Architecture}
   \label{h_architechure}
 \end{figure}
@@ -109,7 +110,7 @@ The precedence order in the table is downward—that is, the bottom-most conditi
 \subsection{R/C Controller}
 Heron ships with a Futaba R/C transmitter integrated as a means of backup control. The RC controller provides reliable long range control of the USV. Vehicle battery voltage is displayed on the controller if the boat is within range and is equipped with a Futaba Voltage Sensor.  It is recommended to remove all AA batteries and store them in a cool dry location when the R/C controller is not in use.
 
-\begin{figure}[htb!]
+\begin{figure}[t]
   \centering
   \includegraphics[width=0.85\linewidth]{h-futaba.PNG}
   \caption{Futaba R/C Transmitter}
@@ -120,7 +121,8 @@ Please see Backup R/C Operation on page \pageref{backupoperation} for details of
 
 \newpage
 
-\subsection{System Specifications}
+
+\section{System Specifications}
 Key specifications of Heron are shown in \autoref{systemspecs}.
 
 \bgroup
@@ -303,6 +305,9 @@ $ sudo apt-get install ros-hydro-kingfisher-desktop
 For the most up-to-date version of these instructions, see: \url{http://ros.org/wiki/Robots/Kingfisher}.
 
 \subsection{SSH Connection}
+
+\textbf{Note:} If you purchased a Basestation with your Heron USV, please refer to the accompanying Robotsmith Memo for instructions on how to connect to the embedded PC. 
+
 The embedded PC in Heron may be accessed directly, with a wired Ethernet cable, or over the wireless network created by the base station.
 
 For wired access, use a standard Ethernet cable to connect from a laptop to the round Ethernet connector in the User Payload Area. Use your computer’s network configuration utilities to give your Ethernet port an IP in the 192.168.1.x subnet. For example, from the Ubuntu commandline:
@@ -314,13 +319,13 @@ $ sudo ifconfig eth0 192.168.1.10 up
 Now attempt to ping the onboard computer at its standard IP:
 
 \begin{lstlisting}
-$ ping 192.168.1.1
+$ ping 192.168.1.11
 \end{lstlisting}
 
 If successful, you should be ready to connect:
 
 \begin{lstlisting}
-$ ssh administrator@192.168.1.1
+$ ssh administrator@192.168.1.11
 \end{lstlisting}
 
 The default password is \lstinline{clearpath}.
@@ -356,7 +361,7 @@ Connecting with SSH provides a first approach to connecting with the vehicle, ho
 The nodes which are launched on startup of Heron have the following environment set:
 
 \begin{lstlisting}
-export ROS_IP=192.168.1.1 
+export ROS_IP=192.168.1.11 
 export ROS_MASTER_URI=http://$ROS_IP:11311
 \end{lstlisting}
 
@@ -364,7 +369,7 @@ When connecting to Heron via the wired Ethernet port, with an IP such as 192.168
 
 \begin{lstlisting}
 export ROS_IP=192.168.1.10 
-export ROS_MASTER_URI=http://192.168.1.1:11311
+export ROS_MASTER_URI=http://192.168.1.11:11311
 \end{lstlisting}
 
 Once these two commands have been executed on your workstation, it should be possible to run \lstinline{rostopic list, rostopic echo,} etc. to verify that you are communicating with the onboard roscore.
