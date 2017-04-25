@@ -21,11 +21,11 @@
 \contentsline {subsection}{\numberline {6.3}Developing with the Onboard PC}{17}{subsection.6.3}
 \contentsline {subsection}{\numberline {6.4}ROS Remote Setup}{17}{subsection.6.4}
 \contentsline {subsection}{\numberline {6.5}ROS Remote Teleoperation}{18}{subsection.6.5}
-\contentsline {subsection}{\numberline {6.6}Key Topics}{19}{subsection.6.6}
-\contentsline {section}{\numberline {7}Payload Integration}{20}{section.7}
-\contentsline {section}{\numberline {8}Maintenance}{22}{section.8}
-\contentsline {subsection}{\numberline {8.1}Charging}{22}{subsection.8.1}
-\contentsline {subsection}{\numberline {8.2}Battery Pack}{22}{subsection.8.2}
-\contentsline {subsection}{\numberline {8.3}Electronics Bay}{22}{subsection.8.3}
-\contentsline {section}{\numberline {9}Tips and Troubleshooting}{23}{section.9}
-\contentsline {section}{\numberline {10}Service and Support}{24}{section.10}
+\contentsline {subsection}{\numberline {6.6}Key Topics}{20}{subsection.6.6}
+\contentsline {section}{\numberline {7}Payload Integration}{21}{section.7}
+\contentsline {section}{\numberline {8}Maintenance}{23}{section.8}
+\contentsline {subsection}{\numberline {8.1}Charging}{23}{subsection.8.1}
+\contentsline {subsection}{\numberline {8.2}Battery Pack}{23}{subsection.8.2}
+\contentsline {subsection}{\numberline {8.3}Electronics Bay}{23}{subsection.8.3}
+\contentsline {section}{\numberline {9}Tips and Troubleshooting}{24}{section.9}
+\contentsline {section}{\numberline {10}Service and Support}{25}{section.10}
