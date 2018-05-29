@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/W32TeX) (preloaded format=xelatex 2017.4.25)  25 APR 2017 19:48
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/W32TeX) (preloaded format=xelatex 2017.4.25)  2 MAY 2017 19:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1807,28 +1807,16 @@ LaTeX Font Info:    Font shape `TU/DINPro(0)/bx/n' will be
 (Font)              scaled to size 20.20313pt on input line 26.
 LaTeX Font Info:    Font shape `TU/DINPro(0)/bx/n' will be
 (Font)              scaled to size 15.15234pt on input line 29.
-
-
-LaTeX Warning: Reference `pcsetup' on page 4 undefined on input line 50.
-
-
-LaTeX Warning: Reference `gettingstarted' on page 4 undefined on input line 52.
-
-
 File: clearpath-latex/clearpath-logo.pdf Graphic file (type QTm)
+
 <use  "clearpath-latex/clearpath-logo.pdf" > [4
 
 ]
-
-LaTeX Warning: Reference `h_the_basics' on page 5 undefined on input line 55.
-
-
-LaTeX Warning: Reference `h_the_basics2' on page 5 undefined on input line 55.
-
 File: h-schematic.pdf Graphic file (type QTm)
-<use  "h-schematic.pdf" >
+ <use  "h-schematic.pdf" >
 File: h-breakouts.pdf Graphic file (type QTm)
- <use  "h-breakouts.pdf" >
+
+<use  "h-breakouts.pdf" >
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -1836,21 +1824,13 @@ File: clearpath-latex/clearpath-logo.pdf Graphic file (type QTm)
 <use  "clearpath-latex/clearpath-logo.pdf" > [5
 
 ]
-
-LaTeX Warning: Reference `h_architechure' on page 6 undefined on input line 72.
-
-
 File: h-architecture.PNG Graphic file (type QTm)
-<use  "h-architecture.PNG" >
+ <use  "h-architecture.PNG" >
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 File: clearpath-latex/clearpath-logo.pdf Graphic file (type QTm)
 <use  "clearpath-latex/clearpath-logo.pdf" > [6]
-
-LaTeX Warning: Reference `hstatusindicator' on page 7 undefined on input line 8
-5.
-
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -1858,19 +1838,14 @@ File: clearpath-latex/clearpath-logo.pdf Graphic file (type QTm)
 <use  "clearpath-latex/clearpath-logo.pdf" > [7]
 File: h-futaba.PNG Graphic file (type QTm)
  <use  "h-futaba.PNG" >
-
-LaTeX Warning: Reference `backupoperation' on page 8 undefined on input line 12
-0.
-
 File: clearpath-latex/clearpath-logo.pdf Graphic file (type QTm)
+
 <use  "clearpath-latex/clearpath-logo.pdf" > [8]
 File: clearpath-latex/clearpath-logo.pdf Graphic file (type QTm)
 
 <use  "clearpath-latex/clearpath-logo.pdf" > [9]
-
-LaTeX Warning: Reference `systemspecs' on page 10 undefined on input line 126.
-
 File: clearpath-latex/clearpath-logo.pdf Graphic file (type QTm)
+
 <use  "clearpath-latex/clearpath-logo.pdf" > [10
 
 ]
@@ -1882,26 +1857,17 @@ File: clearpath-latex/clearpath-logo.pdf Graphic file (type QTm)
 File: clearpath-latex/clearpath-logo.pdf Graphic file (type QTm)
 
 <use  "clearpath-latex/clearpath-logo.pdf" > [12]
-
-LaTeX Warning: Reference `h_pontoon' on page 13 undefined on input line 217.
-
 File: kf_pontoon.PNG Graphic file (type QTm)
-<use  "kf_pontoon.PNG" >
+ <use  "kf_pontoon.PNG" >
 File: clearpath-latex/clearpath-logo.pdf Graphic file (type QTm)
- <use  "clearpath-latex/clearpath-logo.pdf" > [13
+
+<use  "clearpath-latex/clearpath-logo.pdf" > [13
 
 ]
-
-LaTeX Warning: Reference `h_batteryinstall' on page 14 undefined on input line 
-236.
-
 File: h-battery.pdf Graphic file (type QTm)
-<use  "h-battery.pdf" >
-
-LaTeX Warning: Reference `battery-pins' on page 14 undefined on input line 260.
-
-
+ <use  "h-battery.pdf" >
 File: h-battery-pins.png Graphic file (type QTm)
+
 <use  "h-battery-pins.png" >
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1939,16 +1905,8 @@ File: RR-125320-02-XX.jpg Graphic file (type QTm)
 <use  "RR-125320-02-XX.jpg" >
 File: RR-116370-00.jpg Graphic file (type QTm)
  <use  "RR-116370-00.jpg" >
-
-LaTeX Warning: Reference `chg-pins' on page 21 undefined on input line 468.
-
-
-LaTeX Warning: Reference `chg-pinout' on page 21 undefined on input line 468.
-
-
-LaTeX Warning: Reference `chg-pins' on page 21 undefined on input line 468.
-
 File: clearpath-latex/clearpath-logo.pdf Graphic file (type QTm)
+
 <use  "clearpath-latex/clearpath-logo.pdf" > [21
 
 ]
@@ -1965,10 +1923,6 @@ File: clearpath-latex/clearpath-logo.pdf Graphic file (type QTm)
 Underfull \hbox (badness 7851) in paragraph at lines 540--540
 []|\TU/Arial(0)/m/n/10.95 Running lights indi-
  []
-
-
-LaTeX Warning: Reference `statusindicators' on page 24 undefined on input line 
-540.
 
 
 Underfull \hbox (badness 5832) in paragraph at lines 541--541
@@ -2004,19 +1958,13 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 575.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 575.
  ) 
 Here is how much of TeX's memory you used:
- 41315 strings out of 493068
- 830769 string characters out of 6138948
- 931439 words of memory out of 5000000
- 44693 multiletter control sequences out of 15000+600000
+ 41322 strings out of 493068
+ 830837 string characters out of 6138948
+ 935344 words of memory out of 5000000
+ 44700 multiletter control sequences out of 15000+600000
  8655 words of font info for 58 fonts, out of 8000000 for 9000
  1347 hyphenation exceptions out of 8191
  65i,13n,120p,10413b,1223s stack positions out of 5000i,500n,10000p,200000b,80000s
