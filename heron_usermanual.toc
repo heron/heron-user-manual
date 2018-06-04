@@ -5,27 +5,30 @@
 \contentsline {subsection}{\numberline {2.1}Hardware Architecture}{6}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}Status Indicators}{7}{subsection.2.2}
 \contentsline {subsection}{\numberline {2.3}R/C Controller}{8}{subsection.2.3}
-\contentsline {section}{\numberline {3}System Specifications}{10}{section.3}
-\contentsline {section}{\numberline {4}Safety}{11}{section.4}
-\contentsline {subsection}{\numberline {4.1}General Warnings}{11}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Electrical System}{11}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Lifting and Transport}{11}{subsection.4.3}
-\contentsline {section}{\numberline {5}Getting Started}{13}{section.5}
-\contentsline {subsection}{\numberline {5.1}Platform Deployment}{13}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Battery Pack Installation}{14}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}Powering On}{15}{subsection.5.3}
-\contentsline {subsection}{\numberline {5.4}Backup R/C Operation}{15}{subsection.5.4}
-\contentsline {section}{\numberline {6}ROS Operation}{16}{section.6}
-\contentsline {subsection}{\numberline {6.1}PC Setup}{16}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}SSH Connection}{16}{subsection.6.2}
-\contentsline {subsection}{\numberline {6.3}Developing with the Onboard PC}{17}{subsection.6.3}
-\contentsline {subsection}{\numberline {6.4}ROS Remote Setup}{17}{subsection.6.4}
-\contentsline {subsection}{\numberline {6.5}ROS Remote Teleoperation}{18}{subsection.6.5}
-\contentsline {subsection}{\numberline {6.6}Key Topics}{20}{subsection.6.6}
-\contentsline {section}{\numberline {7}Payload Integration}{21}{section.7}
-\contentsline {section}{\numberline {8}Maintenance}{23}{section.8}
-\contentsline {subsection}{\numberline {8.1}Charging}{23}{subsection.8.1}
-\contentsline {subsection}{\numberline {8.2}Battery Pack}{23}{subsection.8.2}
-\contentsline {subsection}{\numberline {8.3}Electronics Bay}{23}{subsection.8.3}
-\contentsline {section}{\numberline {9}Tips and Troubleshooting}{24}{section.9}
-\contentsline {section}{\numberline {10}Service and Support}{25}{section.10}
+\contentsline {section}{\numberline {3}System Specifications}{11}{section.3}
+\contentsline {section}{\numberline {4}Safety}{12}{section.4}
+\contentsline {subsection}{\numberline {4.1}General Warnings}{12}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Electrical System}{12}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Lifting and Transport}{12}{subsection.4.3}
+\contentsline {section}{\numberline {5}Getting Started}{14}{section.5}
+\contentsline {subsection}{\numberline {5.1}Platform Deployment}{14}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Battery Pack Installation}{15}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Powering On}{16}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}Backup R/C Operation}{17}{subsection.5.4}
+\contentsline {section}{\numberline {6}ROS Operation}{18}{section.6}
+\contentsline {subsection}{\numberline {6.1}PC Setup}{18}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}SSH Connection}{18}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Developing with the Onboard PC}{19}{subsection.6.3}
+\contentsline {subsection}{\numberline {6.4}ROS Remote Setup}{19}{subsection.6.4}
+\contentsline {subsection}{\numberline {6.5}ROS Remote Teleoperation}{20}{subsection.6.5}
+\contentsline {subsection}{\numberline {6.6}Key Topics}{21}{subsection.6.6}
+\contentsline {subsection}{\numberline {6.7}Compass Calibration}{21}{subsection.6.7}
+\contentsline {subsection}{\numberline {6.8}NMEA Interface}{21}{subsection.6.8}
+\contentsline {section}{\numberline {7}Payload Integration}{22}{section.7}
+\contentsline {section}{\numberline {8}Maintenance}{25}{section.8}
+\contentsline {subsection}{\numberline {8.1}Charging}{25}{subsection.8.1}
+\contentsline {subsection}{\numberline {8.2}Battery Pack}{25}{subsection.8.2}
+\contentsline {subsection}{\numberline {8.3}Electronics Bay}{25}{subsection.8.3}
+\contentsline {section}{\numberline {9}Operator Checklist}{26}{section.9}
+\contentsline {section}{\numberline {10}Tips and Troubleshooting}{27}{section.10}
+\contentsline {section}{\numberline {11}Service and Support}{28}{section.11}

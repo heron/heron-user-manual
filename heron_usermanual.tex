@@ -1,7 +1,7 @@
 % Software License Agreement
 %
-% Author    Chris Bogdon <cbogdon@clearpathrobotics.com>
-% Copyright (c) 2016, Clearpath Robotics, Inc., All rights reserved.
+% Author    Mike Purvis <MPurvis@clearpathrobotics.com>
+% Copyright (c) 2018, Clearpath Robotics, Inc., All rights reserved.
 %
 % Redistribution and use in source and binary forms, with or without modification, is
 % not permitted without the express permission of Clearpath Robotics.
@@ -47,23 +47,29 @@ Herons are often deployed with a Clearpath Long Range Wireless Network Station (
 
 \subsection{What's Required}
 
-The embedded PC onboard Heron runs Ubuntu Linux 12.04 and ROS Hydro. For maximum simplicity, a development computer should be running the same operating system as the onboard computer; however, any version of Ubuntu supported by ROS Hydro will work. If a laptop option was purchased with Heron it will already be configured with ROS and the appropriate ROS packages. For assistance setting up the development computer, please see the PC Setup section on page \pageref{pcsetup}.
+The embedded PC onboard Heron runs Ubuntu Linux 16.04 and ROS Kinetic. The development computer or laptop should be running the same operating system as the on-board computer; however, any version of Ubuntu supported by ROS Kinectic will work. If a laptop option was purchased with Heron it will already be configured with ROS and the appropriate ROS packages. For assistance setting up the development computer, please see the PC Setup section on page \pageref{pcsetup}.
 
 Heron may also be driven using the included Futaba R/C controller as described in the Getting Started section on page \pageref{gettingstarted}. The R/C controller is intended as a backup to allow powered retrieval of Heron in case of a PC or network malfunction while on the water. 
 
 \section{The Basics}
-This section provides an overview of the key specifications of the Heron platform. \autoref{h_the_basics} and \autoref{h_the_basics2} give a tour of Heron's major components.
+This section provides an overview of the key specifications of the Heron platform. \autoref{h_the_basics1}, \autoref{h_the_basics2} and \autoref{h_the_basics3} give an overview of Heron's major components.
 
 \begin{figure}[h]
-  \centering  \includegraphics[width=0.75\linewidth]{h-schematic.pdf}
+  \centering  \includegraphics[width=0.75\linewidth]{graphics/basics_1.pdf}
   \caption{Heron at a Glance (actual boat may vary slightly from image shown)}
-  \label{h_the_basics}
+  \label{h_the_basics1}
 \end{figure}
 
 \begin{figure}[h]
-  \centering  \includegraphics[width=0.75\linewidth]{h-breakouts.pdf}
+  \centering  \includegraphics[width=0.75\linewidth]{graphics/basics_2.pdf}
   \caption{Heron at a Glance (actual boat may vary slightly from image shown)}
   \label{h_the_basics2}
+\end{figure}
+
+\begin{figure}[h]
+  \centering  \includegraphics[width=0.75\linewidth]{graphics/basics_3.pdf}
+  \caption{Heron at a Glance (actual boat may vary slightly from image shown)}
+  \label{h_the_basics3}
 \end{figure}
 
 \newpage
@@ -73,7 +79,7 @@ This section provides an overview of the key specifications of the Heron platfor
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.85\linewidth]{h-architecture.PNG}
+  \includegraphics[width=0.85\linewidth]{graphics/h-architecture.pdf}
   \caption{Heron Architecture}
   \label{h_architechure}
 \end{figure}
@@ -112,7 +118,7 @@ Heron ships with a Futaba R/C transmitter integrated as a means of backup contro
 
 \begin{figure}[t]
   \centering
-  \includegraphics[width=0.85\linewidth]{h-futaba.PNG}
+  \includegraphics[width=0.85\linewidth]{graphics/h-futaba.PNG}
   \caption{Futaba R/C Transmitter}
   \label{h_futaba}
 \end{figure}
@@ -153,8 +159,8 @@ Key specifications of Heron are shown in \autoref{systemspecs}.
 	Battery Pack Charger & \multicolumn{2}{p{.5\textwidth}}{Short-circuit, over-current, over-voltage, and reverse voltage protection.} \\ \hline
 	Charge Time & 10 hours \\ \hline
 	User Power & \multicolumn{2}{p{.5\textwidth}}{12V fused at 2.5A} \\ \hline
-	Communication & \multicolumn{2}{p{.5\textwidth}}{USB, TCP/IP, RS232, RS485} \\ \hline
-	Standard Sensing & \multicolumn{2}{p{.5\textwidth}}{Battery Voltage, GPS, IMU, Hazard Camera} \\ \hline
+	Communication & \multicolumn{2}{p{.5\textwidth}}{USB, TCP/IP, RS232} \\ \hline
+	Standard Sensing & \multicolumn{2}{p{.5\textwidth}}{Battery Voltage, GPS, IMU} \\ \hline
 	
 	
 	\end{tabular}
@@ -218,7 +224,7 @@ Heron has been designed for easy deployment and rapid transit to and from work s
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.75\linewidth]{kf_pontoon.PNG}
+  \includegraphics[width=0.75\linewidth]{graphics/kf_pontoon.PNG}
   \caption{Pontoon Deployment}
   \label{h_pontoon}
 \end{figure}
@@ -241,32 +247,53 @@ Do not lift the vehicle from the battery pack handle! This may damage the batter
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.75\linewidth]{h-battery.pdf}
+  \includegraphics[width=0.75\linewidth]{graphics/h-battery.pdf}
   \caption{Battery Pack Insertion}
   \label{h_batteryinstall}
 \end{figure}
 
 \begin{enumerate}[nolistsep]
 	\item Ensure Heron's main power button is in the outer “off” position.
-	\item Carefully lower the Battery Pack so that the plug is inserted into the mating connector in the Battery Bay. Ensure that it is firmly seated.
+	\item Carefully lower the Battery Pack. Ensure that it is firmly seated.
 	\item Slide in the fast-pins into the battery retainers. It is OK if the battery retainers rotate, but do not allow them to unthread from their mounts. 
+	\item Plug in the Wet-Mate connector. Ensure there is adequate grease on the connector before attaching the battery to the boat.
 \end{enumerate}
 \textbf{Ensure that the battery is oriented correctly before lowering it into the Battery Bay.}
 
 \begin{warning}
-Remove the battery by lifting above the connector at the front of the battery pack towards the bow of the boat. When this has disengaged, remove the battery vertically along the battery retention posts. 
+The Wet-Mate connector requires Molykote 44 grease. Ensure the connector is adequately greased each time before mating it to the boat or charger.
 \end{warning}
 
-The polarity of the battery pins for each of the two strings of NiMH cells is shown in \autoref{battery-pins}
+
+The polarity of the battery pins for each of the two strings of NiMH cells is shown in \autoref{battery-pins} and \autoref{battery-pins-table}.
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.75\linewidth]{h-battery-pins.png}
+  \includegraphics[width=0.5\linewidth]{graphics/h-batpin.pdf}
   \caption{Battery Pack Pinout}
   \label{battery-pins}
 \end{figure}
 
+\begin{table}[h]
+\centering
+\label{chg_pinout}
+\begin{tabular}{|l|l|l|} 
+Pin number  & Function & Cable Wire Color \\
+\hline
+1  & unused & Black         \\ \hline
+2  & +14V cell 1 & White  	\\ \hline
+3  & +14V cell 1 & Red		\\ \hline
+4  & GND cell 1 & Green     \\ \hline
+5  & GND cell 1 & Orange    \\ \hline
+6  & +14V cell 2 & Blue     \\ \hline
+7  & +14V cell 2 & White/Black	\\ \hline
+8  & GND cell 2 & Red/Black		\\ \hline
+9  & GND cell 2 & Green/Black	\\ \hline
 
+\end{tabular}
+\label{battery-pins-table}
+\caption{Subconn battery connector pinout}
+\end{table}
 
 \newpage
 
@@ -291,18 +318,22 @@ This section provides an overview of how to use ROS on Heron.
 
 \subsection{PC Setup} \label{pcsetup}
 
-To set up your workstation or laptop (hereafter “development machine”) to work with Heron, begin by following the setup instructions for ROS Hydro: \url{http://wiki.ros.org/hydro/Installation}.
+To set up your workstation or laptop (hereafter “development machine”) to work with Heron, begin by following the setup instructions for ROS Kinetic: \url{http://wiki.ros.org/kinetic/Installation}.
 
 Then, install the Heron ROS stacks:
 (Note that many of the existing ROS packages, internet tutorials and support retain the Kingfisher nomenclature of the M200, these may be later updated to replace "kingfisher" with "Heron")
 
 \begin{lstlisting} 
-$ sudo apt-get install ros-hydro-kingfisher-desktop
+sudo apt-get install ros-kinetic-heron-desktop
 \end{lstlisting}
 
- Please contact Clearpath Robotics support if you have questions about upcoming functionality.
+These packages can also be built from source if the package is not available from aptitude. Follow the ROS tutorials to create a catkin workspace. Visit \url{https://github.com/heron} and clone the heron desktop and heron packages to your workspace. 
 
-For the most up-to-date version of these instructions, see: \url{http://ros.org/wiki/Robots/Kingfisher}.
+\url{http://wiki.ros.org/catkin/Tutorials/create_a_workspace}
+
+Please contact Clearpath Robotics support if you have questions about upcoming functionality.
+
+
 
 \subsection{SSH Connection}
 
@@ -310,48 +341,45 @@ For the most up-to-date version of these instructions, see: \url{http://ros.org/
 
 The embedded PC in Heron may be accessed directly, with a wired Ethernet cable, or over the wireless network created by the base station.
 
-For wired access, use a standard Ethernet cable to connect from a laptop to the round Ethernet connector in the User Payload Area. Use your computer’s network configuration utilities to give your Ethernet port an IP in the 192.168.1.x subnet. For example, from the Ubuntu commandline:
+For wired access, use a standard Ethernet cable to connect from a laptop to the round Ethernet connector in the User Payload Area. Use your computer’s network configuration utilities to give your Ethernet port an IP in the 192.168.131.x subnet. For example, from the Ubuntu commandline:
 
 \begin{lstlisting}
-$ sudo ifconfig eth0 192.168.1.10 up
+sudo ifconfig eth0 192.168.131.5 up
 \end{lstlisting}
 
 Now attempt to ping the onboard computer at its standard IP:
 
 \begin{lstlisting}
-$ ping 192.168.1.11
+ping 192.168.131.1
 \end{lstlisting}
 
 If successful, you should be ready to connect:
 
 \begin{lstlisting}
-$ ssh administrator@192.168.1.11
+ssh administrator@192.168.131.1
 \end{lstlisting}
 
 The default password is \lstinline{clearpath}.
 
 
-\textbf{For wireless access}, connect to the base station’s LAN port with an Ethernet cable, or simply join the wireless network (use the credentials included with your shipment). The base station’s administration panel will tell you which IP it assigned to the Heron, or you can use arp or nmap to locate it.
+\textbf{For wireless access}, connect to the base station’s LAN port with an Ethernet cable, or simply join the wireless network (use the credentials included with your shipment). 
 
-\textbf{To configure the wireless network settings}, first connect via SSH using the wired method above, and then use the WICD network manager. To launch the curses-based interactive text client to WICD, execute:
+\textbf{To configure the wireless network settings}, configure the Heron WiFi radio's settings by visiting 192.168.131.10 in your browser while wired to the vehicle or connected to the wireless network. 
 
-\begin{lstlisting}
-$ wicd-curses
-\end{lstlisting}
 
-To give Heron access to the Internet, connect the base station’s WAN port to a wired network connection, or use WICD to temporarily connect Heron to a wireless network with Internet access (such as a wireless hotspot).
+To give Heron access to the Internet, connect the base station’s WAN port to a wired network connection, or configure the WiFi radio to temporarily connect Heron to a wireless network with Internet access (such as a wireless hotspot).
 
 \subsection{Developing with the Onboard PC}
 When connected to the onboard PC via SSH, be aware of the following locations:
 
 \begin{itemize}[nolistsep]
-	\item \textbf{/opt/ros/hydro} is where ROS packages from apt live, including Kingfisher’s core packages. You should not need to modify the contents of this directory.
-	\item \textbf{/etc/ros/hydro/kingfisher-core.d} is a directory of roslaunch files which are launched on bootup of Heron's computer.
+	\item \textbf{/opt/ros/kinectic} is where ROS packages from apt live, including Heron’s core packages. You should not need to modify the contents of this directory.
+	\item \textbf{/etc/ros/kinetic/ros.d} is a directory of roslaunch files which are launched on bootup of Heron's computer.
 \end{itemize}
 
 When you are ready to develop additional software to add to Heron, the recommended path is to add your source repo to a new \lstinline{~/catkin_ws overlay} . When you roslaunch your software, it will seamlessly connect to the already-running background ROS network.
 
-When you’re ready to launch some of your software on boat startup, you can add launchfiles to the \lstinline{kingfisher-core.d} path, but you will also need to change the workspace sourced by the background job. To do this, edit the final line of the \lstinline{/etc/ros/setup.bash} file, and set it to source the setup.bash of the workspace containing the packages which your startup launch file will require.
+When you’re ready to launch some of your software on boat startup, you can add launchfiles to the \lstinline{ros.d} path, but you will also need to change the workspace sourced by the background job. To do this, edit the final line of the \lstinline{/etc/ros/setup.bash} file, and set it to source the setup.bash of the workspace containing the packages which your startup launch file will require.
 
 For more information on using Overlays, see the ROS wiki: \url{http://wiki.ros.org/catkin/Tutorials/workspace_overlaying}
 
@@ -361,42 +389,20 @@ Connecting with SSH provides a first approach to connecting with the vehicle, ho
 The nodes which are launched on startup of Heron have the following environment set:
 
 \begin{lstlisting}
-export ROS_IP=192.168.1.11 
+export ROS_IP=192.168.131.1 
 export ROS_MASTER_URI=http://$ROS_IP:11311
 \end{lstlisting}
 
-When connecting to Heron via the wired Ethernet port, with an IP such as 192.168.1.10 (as instructed above), the setup of the environment on your workstation is indeed simple:
+When connecting to Heron via the wired Ethernet port, with an IP such as 192.168.131.5 (as instructed above), the setup of the environment on your workstation is indeed simple:
 
 \begin{lstlisting}
-export ROS_IP=192.168.1.10 
-export ROS_MASTER_URI=http://192.168.1.11:11311
+export ROS_IP=192.168.131.5
+export ROS_MASTER_URI=http://192.168.131.1:11311
 \end{lstlisting}
 
 Once these two commands have been executed on your workstation, it should be possible to run \lstinline{rostopic list, rostopic echo,} etc. to verify that you are communicating with the onboard roscore.
 
-\textbf{What about connecting over wireless?} To get the remote ROS connection over wireless an additional step is required. Say that your development machine is connected to the base station and receives an IP of 192.168.0.120, while the Heron you’d like to communicate with has an IP of 192.168.0.101.
 
-\begin{figure}[h]
-  \centering
-  \includegraphics[width=0.75\linewidth]{h_wireless.PNG}
-  \label{h_wireless}
-\end{figure}
-
-The \lstinline{ROS_MASTER_URI} is still the same, but your workstation doesn’t know anything about 192.168.1.1 or where to find it until you give it a little help using the \lstinline{route} command. Execute the following three commands to set up your environment to talk to Heron over the wireless (modify the address of your development machine and the Heron as appropriate, of course):
-
-\begin{lstlisting}
-route add -net 192.168.1.1 netmask 255.255.255.255 gw 192.168.0.101 
-export ROS_IP=192.168.0.120 
-export ROS_MASTER_URI=http://192.168.1.1:11311 
-\end{lstlisting}
-
-The route tells your workstation to send packets destined for 192.168.1.1 instead to 192.168.0.101, which is the Heron. Once they’ve made it that far, the Linux networking system will be able to take it from there.
-
-The custom route will not persist between reboots. At any time, you can view the Linux kernel routing table by simply executing:
-
-\begin{lstlisting}
-Route
-\end{lstlisting}
 
 \subsection{ROS Remote Teleoperation}
 
@@ -413,50 +419,65 @@ Note that this package is currently being transitioned from legacy Kingfisher pa
 \pagebreak
 
 \subsection{Key Topics}
-Heron ships with a rich suite of standard hardware. Each included peripheral is set up from the get-go with appropriate driver software on the onboard PC. This section details how to find the various topics related to each device.
+Heron ships with a suite of standard hardware. Each included peripheral is set up from the get-go with appropriate driver software on the onboard PC. This section details how to find the various topics related to each device.
 
 When connected via SSH, or by setting up remote ROS (as detailed above), list available topics with:
 
 \begin{lstlisting}
-$ rostopic list
+rostopic list
 \end{lstlisting}
 
-The \textbf{drive system} publishes information about battery voltage and motor current on the \lstinline{/sense} topic. It listens for commands on \lstinline{/cmd_vel} (geometry\_msgs/Twist) and \lstinline{/cmd_drive} (kingfisher\_msgs/Drive).
+The \textbf{drive system} publishes information about battery voltage and motor current on the \lstinline{/sense} topic. It listens for commands on \lstinline{/cmd_drive} (kingfisher\_msgs/Drive).
 
 The \textbf{IMU} publishes data on the \lstinline{/imu/data} topic.
 
-The \textbf{GPS} publishes fixes on the \lstinline{/gps/fix} topic.
+The \textbf{GPS} publishes fixes on the \lstinline{/navsat/fix} topic.
 
+Information from the MCU is available on the \lstinline{/sense} topic.
 
+\subsection{Compass Calibration}
+
+To calibrate the magnetometer on the IMU, place the Heron in open water and run the calibrate compass script. The boat will turn in place while it takes measurements from the magnetometer for 60s. It will then save a configuration file for the compass which will be used when the vehicle powers on. Ensure that the configuration YAML file is saved to the proper working directory of the Heron packages:\texttt{heron\_base/config/imu\_compass.yaml.}
+
+\begin{lstlisting}
+\texttt{rosrun heron\_bringup calibrate_compass}
+\end{lstlisting}
+
+\subsection{NMEA Interface}
+
+The Heron has an NMEA interface available for use with software packages such as MOOS-IVP. By default, the NMEA interface is not configured to run on launch. To start the NMEA interface automatically on launch, add the nmea\_if.launch file to the startup launch directory ( /etc/ros/kinectic/ros.d) , or install it with the robot\_upstart package. 
+\begin{lstlisting}
+sudo cp \texttt{/opt/ros/kinectic/share/heron_nmea/launch/nmea_if.launch /etc/ros/kinectic/ros.d/}
+\end{lstlisting}
 
 \newpage
 
 \section{Payload Integration}
-The User Payload Area of Heron includes a standard Ethernet connector, 2 USB connectors and 2 custom RS232 + 12V power connectors. These may be used to power and communicate with payloads such as sonar-based instruments, LiDARs and cameras.
+The User Payload Area of Heron includes a standard Ethernet connector, 3 USB connectors and 2 custom RS232 + 12V power connectors. These may be used to power and communicate with payloads such as sonar-based instruments, LiDARs and cameras.
 
 \textbf{When the mating connectors are not being used the supplied plug connector and dust cap must be installed to ensure that the Heron electronics remain sealed.}
 
-The waterproof Ethernet panel connector on the Heron electronic enclosure is part number \textbf{RR-125300-30} available from www.USBfirewire.com. The mating connector can be either part number \textbf{RR-125330-00} - RJ45 Field Installable Conenctor or \textbf{RR-125320-01-116} RJ45 Waterproof Cable, also available from www.USBfirewire.com
+The waterproof ethernet panel connector on the Heron electronic enclosure is part number \textbf{RR-225200-30} available from www.USBfirewire.com. The mating connector can be either part number \textbf{RR-225360-00} - RJ45 Field Installable Conenctor or \textbf{RR-225320-06-XX} RJ45 Waterproof Cable, also available from www.USBfirewire.com
 
 
-
-%\begin{figure}[h]
-%  \centering
-%  \includegraphics[width=0.25\linewidth]{RR-125300-30.jpg}
-%  \label{h_eth0}
-%  \caption{Electronics Enclosure Ethernet Connector}
-%\end{figure}
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.25\linewidth]{RR-125330-00.jpg}
-  \includegraphics[width=0.25\linewidth]{RR-125320-02-XX.jpg}
-  
-  \label{h_eth1}
-  \caption{Electronics Enclosure Ethernet Connection options RR-125330-00 and RR-125320-01-116}
+  \includegraphics[width=0.25\linewidth]{graphics/RR-225200-30.jpg}
+  \label{h_eth0}
+  \caption{Electronics Enclosure Ethernet Connector}
 \end{figure}
 
-The mating connector for the waterproof USB panel mount connectors on the Heron electronics enclosure bay is part number \textbf{RR-116370-00} -field installable connector from USBfirewire.com. Please review other mating options for the screw-lock type USB connectors available on usbfirewire.com such as \textbf{RR-116320-06-39} - Waterproof USB Cable - A Extension.
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.25\linewidth]{graphics/RR-225360-00.jpg}
+  \includegraphics[width=0.25\linewidth]{graphics/RR-225320-06-118.jpg}
+  
+  \label{h_eth1}
+  \caption{Electronics Enclosure Ethernet Connection options RR-225360-00 and RR-225320-06-XX}
+\end{figure}
+
+The mating connector for the waterproof USB panel mount connectors RR-218300-30 on the Heron electronics enclosure bay is part number \textbf{RR-116370-00} -field installable connector from USBfirewire.com. Please review other mating options for the screw-lock type USB connectors available on usbfirewire.com such as \textbf{RR-116320-06-39} - Waterproof USB Cable - A Extension.
 
 \begin{figure}[h]
   \centering
@@ -465,11 +486,11 @@ The mating connector for the waterproof USB panel mount connectors on the Heron 
   \caption{Electronics Enclosure USB connector RR-116370-00}
 \end{figure}
 
-RS232 and 12V power are supplied via two female panel mount Chogori Standard Series 6-pin connectors on the Heron electronics enclosure (part number \textbf{22006615-01}).  The mating connector is a Chogori 6-pin male cord plug, part number \textbf{22006111-01} . Please review the data sheets of each connector prior to assembly. The pin-out for the mating Chogori cord connector is given in \autoref{chg_pins} and \autoref{chg_pinout}. Note that \autoref{chg_pins} should be interpreted as viewed from the solder end of the field installable connector. 
+RS232 and 12V power are supplied via two female panel mount Chogori Standard Series 6-pin connectors on the Heron electronics enclosure (part number \textbf{22006615-01}).  The mating connector is a Chogori 6-pin male cord plug, part number \textbf{22006111-01} . Please review the data sheets of each connector prior to assembly. The pin-out for the mating Chogori cord connector is given in \autoref{chg_pins} and \autoref{chg_pinout}. Note that \autoref{chg_pinout} should be interpreted as viewed from the solder end of the field installable connector. 
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.5\linewidth]{h-field_conn_pins.png}
+  \includegraphics[width=0.5\linewidth]{graphics/h-field_conn_pins.png}
   \label{chg_pins}
   \caption{Chogori Field Installable Connector pin numbering }
 \end{figure}
@@ -495,24 +516,30 @@ Pin number  & Function \\
 \caption{EN3 Pin Function}
 \end{table}
 
-
+The RS232 ports are available on the on-board PC as devices: \textbf{ttyS4} \textbf{ttyS5}. These ports may not function if the BIOS of the PC have been reset to factory default. 
 
 \newpage
 
 \section{Maintenance}
-Kingfisher is built for rugged, long-term use. However, there are steps that can be taken to maintain and extend the life of the platform even further.
+Heron is built for rugged, long-term use. However, there are steps that can be taken to maintain and extend the life of the platform even further.
 
 \subsection{Charging}
 The Battery Pack which ships with Heron can be charged with the following steps:
 
 \begin{enumerate}[nolistsep]
 	\item Remove Battery Pack from platform.
-	\item Connect the DC output cable from the charger to the Battery Pack terminal connector.
-	\item Plug the charger power cord into the charger, and then into a wall receptacle.
-	\item When the Battery Pack is fully charged, the LED will turn green. Unplug the charger from the wall, and then disconnect it from the Battery Pack.
+	\item Connect the SubConn Wet-Mate output adapter cable from the charger to the Battery Pack terminal connector. Ensure the connector has adequate Molykote 44 grease
+	\item Configure the charger to charge both sells on the NiMH setting at 2amps. 
+	\item Begin charging with each channel of the charger. The charger will report the battery voltage and charging current. The charger will automatically stop when each channel has reached full charge at approximately 17V. 
 \end{enumerate}
 
-Charging at a lower current will require more time, but will ensure that all cells within the Battery Pack are properly balanced, yielding longer runtimes and better overall battery health. It is recommended that each Battery Pack is charged at 0.9A after every 5 charge-discharge cycles.
+\begin{warning}
+The Heron battery pack contains 2, 14V, 14.5Ah strings of NiMH batteries. Ensure each channel of the charger is activated when charging the battery. 
+\end{warning}	
+
+\begin{warning}
+Do not plug a battery pack with unbalanced cells into the Heron. 
+\end{warning}	
 
 \subsection{Battery Pack}
 Heron's power supply is a sealed 14.4 V nickel metal hydride (NiMH) battery, providing 29 ampere-hours of charge. To maximize the lifetime of the Battery Pack, recharge immediately after use, and keep charged to prevent loss in capacity.
@@ -521,6 +548,17 @@ The Battery Pack should never be used or stored in an environment exceeding 40 d
 
 \subsection{Electronics Bay}
 Heron's electronics are enclosed in a sealed compartment. These do not require maintenance, and the bay should only be opened by, or under the supervision of, Clearpath Robotics.
+
+\newpage
+
+\section{Operator Checklist}
+
+\begin{enumerate}
+\item Ensure all batteries are charged: vehicle battery, RC remote battery, base station battery. The vehicle battery voltage is visible on the RC remote at close range.
+\item Ensure all fittings and connectors are not loose. These include: antenna connectors, USB, Ethernet and RS232 connectors, thruster and LED connectors.
+\item Ensure all connector caps or payload connections are attached.
+\item Ensure the WiFi is connected if required.
+\end{enumerate}
 
 \newpage
 
@@ -538,8 +576,8 @@ This section lists a few possible issues which may be encountered in the course 
 {\bf Observation}                    & {\bf Issue \& Resolution}                                                                                                                                                                                                                                                                                          \\ \hline
 No power LED                         & \textbf{System is unpowered}. Ensure power button is pressed, and check that battery is properly seated in battery bay. It is unlikely that the battery would be so discharged as to be unable to illuminate the LED, but you could also confirm with a multimeter that the battery has a terminal voltage of at least 14V. \\ \hline
 Running lights indicate error status & \textbf{System is in error}. Please refer to Status Indicators on page \pageref{statusindicators} to determine the status being indicated, and contact support for further assistance.                                                                                                                                                               \\ \hline
-Can’t ping onboard PC                & \textbf{Network problem}. Ensure that Heron is indicating successful connection to the base station, and that the user laptop is also successfully connected (ie, able to ping 192.168.0.1).                                                                                                                           \\ \hline
-Unable to list ROS topics            & \textbf{ROS network problem}. Ensure that the user laptop has a working ROS installation, including the Kingfisher workspace. Ensure that ROS\_MASTER\_URI is correctly pointing to the Heron IP, and that ROS\_IP is set to the user laptop’s IP.                                                                     \\ \hline
+Can’t ping onboard PC                & \textbf{Network problem}. Ensure that Heron is indicating successful connection to the base station, and that the user laptop is also successfully connected (ie, able to ping 192.168.131.9).                                                                                                                           \\ \hline
+Unable to list ROS topics            & \textbf{ROS network problem}. Ensure that the user laptop has a working ROS installation, including the Heron workspace. Ensure that ROS\_MASTER\_URI is correctly pointing to the Heron IP, and that ROS\_IP is set to the user laptop’s IP.                                                                     \\ \hline
 Unable to echo ROS topics            & \textbf{ROS environment problem}. Ensure that the user laptop is able to ping Heron, and that ROS\_MASTER\_URI and ROS\_IP are set correctly.                                                                                                                                                                          \\ \hline
 \end{tabular}
 \end{table}
