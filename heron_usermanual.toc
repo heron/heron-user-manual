@@ -15,6 +15,7 @@
 \contentsline {subsection}{\numberline {5.2}Battery Pack Installation}{15}{subsection.5.2}
 \contentsline {subsection}{\numberline {5.3}Powering On}{16}{subsection.5.3}
 \contentsline {subsection}{\numberline {5.4}Backup R/C Operation}{17}{subsection.5.4}
+\contentsline {subsection}{\numberline {5.5}Networking}{17}{subsection.5.5}
 \contentsline {section}{\numberline {6}ROS Operation}{18}{section.6}
 \contentsline {subsection}{\numberline {6.1}PC Setup}{18}{subsection.6.1}
 \contentsline {subsection}{\numberline {6.2}SSH Connection}{18}{subsection.6.2}
