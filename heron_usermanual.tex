@@ -47,7 +47,7 @@ Herons are often deployed with a Clearpath Long Range Wireless Network Station (
 
 \subsection{What's Required}
 
-The embedded PC onboard Heron runs Ubuntu Linux 16.04 and ROS Kinetic. The development computer or laptop should be running the same operating system as the on-board computer; however, any version of Ubuntu supported by ROS Kinectic will work. If a laptop option was purchased with Heron it will already be configured with ROS and the appropriate ROS packages. For assistance setting up the development computer, please see the PC Setup section on page \pageref{pcsetup}.
+The embedded PC onboard Heron runs Ubuntu Linux 18.04 and ROS Melodic. The development computer or laptop should be running the same operating system as the on-board computer; however, any version of Ubuntu supported by ROS Kinectic will work. If a laptop option was purchased with Heron it will already be configured with ROS and the appropriate ROS packages. For assistance setting up the development computer, please see the PC Setup section on page \pageref{pcsetup}.
 
 Heron may also be driven using the included Futaba R/C controller as described in the Getting Started section on page \pageref{gettingstarted}. The R/C controller is intended as a backup to allow powered retrieval of Heron in case of a PC or network malfunction while on the water.
 
@@ -313,7 +313,7 @@ When operation of the thrusters has been verified on land, deploy Heron into the
 
 \subsection{Networking}
 
-The Heron comes with a Microhard PX2 WiFi radio. The devices IP address is conventionally set to \textbf{192.168.131.10}.
+The Heron comes with a Microhard PX2 WiFi radio. The devices IP address is conventionally set to \textbf{192.168.131.51}.
 The username and password to radio are:
 \begin{itemize}
 \item \textbf{username:} admin
@@ -336,8 +336,8 @@ In configuration 2 with the USV PX2 configured as an access point:
 
 \begin{enumerate}
 \item \textbf{USB Adapter:}A USB to Ethernet Adapter can be used to wire your building's network to the robot. Plug this into the boat's USB port. This should give the robot access to the internet and allow anyone on the network to connect to the vehicle
-\item \textbf{WiFi:} The vehicle's radio can be configured to connect to the building's WiFi as a client. Visit the radio's IP address 192.168.131.10, first download and save the default configuration and set the radio as a client to your WiFi network. Next change the radio to a client on your building's network. You will not be able to access the robot through the network, only through a local Ethernet connection.
-\item \textbf{Ethernet:} The vehicle can be connected to the building's network via the Ethernet port. DHCP should first be disabled on the PX2 by visiting 192.168.131.1. Re-enable DHCP when complete.
+\item \textbf{WiFi:} The vehicle's radio can be configured to connect to the building's WiFi as a client. Visit the radio's IP address 192.168.131.51, first download and save the default configuration and set the radio as a client to your WiFi network. Next change the radio to a client on your building's network. You will not be able to access the robot through the network, only through a local Ethernet connection.
+\item \textbf{Ethernet:} The vehicle can be connected to the building's network via the Ethernet port. DHCP should first be disabled on the PX2 by visiting 192.168.131.51. Re-enable DHCP when complete.
 \end{enumerate}
 
 
@@ -349,13 +349,13 @@ This section provides an overview of how to use ROS on Heron.
 
 \subsection{PC Setup} \label{pcsetup}
 
-To set up your workstation or laptop (hereafter “development machine”) to work with Heron, begin by following the setup instructions for ROS Kinetic: \url{http://wiki.ros.org/kinetic/Installation}.
+To set up your workstation or laptop (hereafter “development machine”) to work with Heron, begin by following the setup instructions for ROS Melodic: \url{http://wiki.ros.org/melodic/Installation}.
 
 Then, install the Heron ROS stacks:
 (Note that many of the existing ROS packages, internet tutorials and support retain the Kingfisher nomenclature of the M200, these may be later updated to replace "kingfisher" with "heron")
 
 \begin{lstlisting}
-sudo apt-get install ros-kinetic-heron-desktop
+sudo apt-get install ros-melodic-heron-desktop
 \end{lstlisting}
 
 These packages can also be built from source if the package is not available from aptitude. Follow the ROS tutorials to create a catkin workspace. Visit \url{https://github.com/heron} and clone the heron desktop and heron packages to your workspace.
@@ -372,10 +372,10 @@ Please contact Clearpath Robotics support if you have questions about upcoming f
 
 The embedded PC in Heron may be accessed directly, with a wired Ethernet cable, or over the wireless network created by the base station.
 
-For wired access, use a standard Ethernet cable to connect from a laptop to the round Ethernet connector in the User Payload Area. Use your computer’s network configuration utilities to give your Ethernet port an IP in the 192.168.131.x subnet. For example, from the Ubuntu commandline:
+For wired access, use a standard Ethernet cable to connect from a laptop to the round Ethernet connector in the User Payload Area. Use your computer’s network configuration utilities to give your Ethernet port an IP in the 192.168.131.x, such as 192.168.131.101 subnet. For example, from the Ubuntu commandline:
 
 \begin{lstlisting}
-sudo ifconfig eth0 192.168.131.5 up
+sudo ifconfig eth0 192.168.131.101 up
 \end{lstlisting}
 
 Now attempt to ping the onboard computer at its standard IP:
@@ -395,7 +395,7 @@ The default password is \lstinline{clearpath}.
 
 \textbf{For wireless access}, connect to the base station’s LAN port with an Ethernet cable, or simply join the wireless network (use the credentials included with your shipment).
 
-\textbf{To configure the wireless network settings}, configure the Heron WiFi radio's settings by visiting 192.168.131.10 in your browser while wired to the vehicle or connected to the wireless network.
+\textbf{To configure the wireless network settings}, configure the Heron WiFi radio's settings by visiting 192.168.131.51 in your browser while wired to the vehicle or connected to the wireless network.
 
 
 To give Heron access to the Internet, connect the base station’s WAN port to a wired network connection, or configure the WiFi radio to temporarily connect Heron to a wireless network with Internet access (such as a wireless hotspot).
@@ -405,7 +405,7 @@ When connected to the onboard PC via SSH, be aware of the following locations:
 
 \begin{itemize}[nolistsep]
 	\item \textbf{/opt/ros/kinectic} is where ROS packages from apt live, including Heron’s core packages. You should not need to modify the contents of this directory.
-	\item \textbf{/etc/ros/kinetic/ros.d} is a directory of roslaunch files which are launched on bootup of Heron's computer.
+	\item \textbf{/etc/ros/melodic/ros.d} is a directory of roslaunch files which are launched on bootup of Heron's computer.
 \end{itemize}
 
 When you are ready to develop additional software to add to Heron, the recommended path is to add your source repo to a new \lstinline{~/catkin_ws overlay} . When you roslaunch your software, it will seamlessly connect to the already-running background ROS network.
