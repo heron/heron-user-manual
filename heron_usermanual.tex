@@ -28,8 +28,7 @@ Clearpath Robotics Heron is a rugged and easy-to-use Unmanned Surface Vessel (US
 
 \subsection{What's Included}
 
-Included with each Heron are the following:
-
+Included with each Heron are the followin
 \begin{itemize}[nolistsep]
 	\item 1x Clearpath Robotics Heron USV
 	\item 1x 14.4V NiMH Battery Pack
@@ -47,7 +46,7 @@ Herons are often deployed with a Clearpath Long Range Wireless Network Station (
 
 \subsection{What's Required}
 
-The embedded PC onboard Heron runs Ubuntu Linux 18.04 and ROS Melodic. The development computer or laptop should be running the same operating system as the on-board computer; however, any version of Ubuntu supported by ROS Kinectic will work. If a laptop option was purchased with Heron it will already be configured with ROS and the appropriate ROS packages. For assistance setting up the development computer, please see the PC Setup section on page \pageref{pcsetup}.
+The embedded PC onboard Heron runs Ubuntu Linux 18.04 and ROS Melodic. The development computer or laptop should be running the same operating system as the on-board computer; however, any version of Ubuntu supported by ROS Melodic will work. If a laptop option was purchased with Heron it will already be configured with ROS and the appropriate ROS packages. For assistance setting up the development computer, please see the PC Setup section on page \pageref{pcsetup}.
 
 Heron may also be driven using the included Futaba R/C controller as described in the Getting Started section on page \pageref{gettingstarted}. The R/C controller is intended as a backup to allow powered retrieval of Heron in case of a PC or network malfunction while on the water.
 
@@ -75,7 +74,7 @@ This section provides an overview of the key specifications of the Heron platfor
 \newpage
 
 \subsection{Hardware Architecture}
-\autoref{h_architechure} gives an overview of the standard devices which make up Heron. This diagram is provided to aid the user in understanding the Heron system architecture.
+\autoref{h_architechure} gives an overview of the standard devices which make up Heron. This diagram illustrates the basic Heron systems architecture.
 
 \begin{figure}[h]
   \centering
@@ -181,7 +180,7 @@ Heron is a rugged and high-performance vehicle. For the safety of yourself and o
 
 Indoor swimming pools provide an ideal environment for initial testing.
 
-When starting out, it is recommended to favor slower speeds. Operating at speeds lower than 0.5 m/s will give the user more time to react if things don’t go quite as expected.
+When starting out, it is recommended to select slower speeds. Operating at speeds lower than 0.5 m/s will give the user more time to react if things don’t go quite as expected.
 
 Adhere to all pool and open water safety considerations.
 
@@ -326,6 +325,7 @@ The username and password to radio are:
 \begin{enumerate}
 \item The PX2 is connected to the Clearpath network station as a client
 \item the PX2 is configured as an access point and hosts its own network.
+\item The PX2 is configured as a client, connected to the Clearpath facility network under special circumstances.
 \end{enumerate}
 
 To provide the USV access to the internet:
@@ -340,7 +340,7 @@ In configuration 2 with the USV PX2 configured as an access point:
 \item \textbf{Ethernet:} The vehicle can be connected to the building's network via the Ethernet port. DHCP should first be disabled on the PX2 by visiting 192.168.131.51. Re-enable DHCP when complete.
 \end{enumerate}
 
-
+In all cases, ensure that the Microhard PX2 is configured to Bridge the WAN and LAN port in the settings. The Heron RJ45 Panel Ethernet Connector is connected to the PX2 WAN Port. The PX2 LAN port is connected to the ATOM PC as shown in. \ref{h_architechure}.
 
 \newpage
 
@@ -484,7 +484,7 @@ sudo cp \texttt{/opt/ros/kinectic/share/heron_nmea/launch/nmea_if.launch /etc/ro
 \newpage
 
 \section{Payload Integration}
-The User Payload Area of Heron includes a standard Ethernet connector, 3 USB connectors and 2 custom RS232 + 12V power connectors. These may be used to power and communicate with payloads such as sonar-based instruments, LiDARs and cameras.
+The User Payload Area of Heron includes a standard Ethernet connector, 2 USB connectors and 2 custom RS232 + 12V power connectors. These may be used to power and communicate with payloads such as sonar-based instruments, LiDARs and cameras.
 
 \textbf{When the mating connectors are not being used the supplied plug connector and dust cap must be installed to ensure that the Heron electronics remain sealed.}
 
